@@ -7,6 +7,7 @@ const App = () => {
        {/* navbar */}
        <Nav />
        {/* banner */}
+       <div className="test"></div>
       
        {/* rows */}
        {/* video */}
