@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './components/Footer';
 import Nav from './components/Nav';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
        {/* video */}
        {/* video rapide */}
        {/* Footer */}
+       <Footer />
     </div>
   );
 };
