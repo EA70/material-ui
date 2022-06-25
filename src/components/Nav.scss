@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 
     flex-wrap: wrap;
     position: fixed;
@@ -61,10 +62,7 @@
     }
 
     &__actions {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex: 1;
+
 
         .nav__action {
             margin-left: 10px;

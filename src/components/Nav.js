@@ -1,11 +1,14 @@
 import React from 'react';
 import './Nav.scss' ;
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 const Nav = () => {
     return (
         <div className='nav show nav--black'>
-            <button className="nav__burger">...</button>
+            <button className="nav__burger">
+                < MenuIcon />
+            </button>
             <img src="./img/logo.png" className='nav__logo' alt="netflix" />
             <nav className="nav__links">
                 <a href="/" className="nav__link">
