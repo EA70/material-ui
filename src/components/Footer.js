@@ -26,31 +26,31 @@ const Footer = () => {
                 </div>
                 <ul className="footer__links">
                     <li className="footer__link">
-                        <a href="/">Lien</a>
+                        <a href="/">Top 50</a>
                     </li>
                     <li className="footer__link">
-                        <a href="/">Lien</a>
+                        <a href="/">Series & Films</a>
                     </li>
                     <li className="footer__link">
-                        <a href="/">Lien</a>
+                        <a href="/">Nouveautés</a>
                     </li>
                     <li className="footer__link">
-                        <a href="/">Lien</a>
+                        <a href="/">Politiques et confidentialités</a>
                     </li>
                     <li className="footer__link">
-                        <a href="/">Lien</a>
+                        <a href="/">Nous contacter</a>
                     </li>
                     <li className="footer__link">
-                        <a href="/">Lien</a>
+                        <a href="/">Abonnements</a>
                     </li>
                     <li className="footer__link">
-                        <a href="/">Lien</a>
+                        <a href="/">Connexion</a>
                     </li>
                     <li className="footer__link">
-                        <a href="/">Lien</a>
+                        <a href="/">Inscription</a>
                     </li>
                     <li className="footer__link">
-                        <a href="/">Lien</a>
+                        <a href="/">Obtener un abonnement gratuit</a>
                     </li>
                 </ul>
 
