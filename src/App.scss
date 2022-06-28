@@ -13,6 +13,14 @@ body {
     outline: none ;
 }
 
+h1, p {
+    margin-bottom: 1rem;
+    @media screen and (min-width:760px) {
+        margin-bottom: 2rem;
+    }
+}
+
+
 button {
     background: none;
     border: none;
