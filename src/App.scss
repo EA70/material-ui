@@ -13,7 +13,7 @@ body {
     outline: none ;
 }
 
-h1, p {
+h1, h2, h3, p {
     margin-bottom: 1rem;
     @media screen and (min-width:760px) {
         margin-bottom: 2rem;

@@ -1,0 +1,49 @@
+.quickView {
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+    border-radius: 10px ;
+    height: calc(100vh - 60px);
+    top: 60px;
+    margin: 0 4%;
+    overflow-y: scroll;
+    display: none;
+
+    &.open {
+        display: block;
+    }
+
+    &__banner {
+        padding-top: 50vh;
+        height: 50vh;
+        font-size: 1.5rem;
+    }
+
+    &__content {
+        padding: 3rem;
+        font-size: 1rem;
+    }
+
+    &__close {
+        position: absolute;
+        cursor: pointer;
+        top: 10px;
+        right: 10px;
+        background: white;
+    }
+
+
+
+    @media screen and (min-width:768px) {
+        width: 50%;
+        left: 25%;
+        right: 25%;
+    }
+
+
+
+
+
+
+    
+}

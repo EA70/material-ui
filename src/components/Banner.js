@@ -4,6 +4,7 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import HelpIcon from '@mui/icons-material/Help';
 import requests from './data/requests';
 import axios from 'axios';
+import QuickView from './QuickView'
 
 
 const Banner = () => {
@@ -11,6 +12,11 @@ const Banner = () => {
 
 
     const [movie, setMovie] = useState([]);
+    const [popup, setPopup] = useState(false);
+
+    const clickPopup = () => {
+        popup ? setPopup (false) : setPopup(true) ;
+    }
 
     axios
         .get("https://api.themoviedb.org/3/trending/all/week?api_key=acadce2268a0e1bcdd56b5e18e06c4ce")
@@ -29,8 +35,11 @@ const Banner = () => {
                     ]
                 );
             }
+            // On joue la fonction !
             fetchData();
-        }, [] )
+
+        }, [] ) ;
+        
 
 
 
@@ -40,7 +49,8 @@ const Banner = () => {
         backgroundPosition:"center center"
     }
 
-    console.log(movie);
+    // console.log(movie);
+    // console.log(popup);
 
     return (
         <header className="banner" style={bannerStyle}>
@@ -49,9 +59,10 @@ const Banner = () => {
                 <p className="banner__description"> {movie?.overview} </p>
                 <div className="banner__buttons">
                     <button className="banner__button banner__button--play"> < PlayArrowIcon /> Lecture</button>
-                    <button className="banner__button"> < HelpIcon />  Plus d'info</button>
+                    <button className="banner__button" onClick={clickPopup}  > < HelpIcon />  Plus d'info</button>
                 </div>
             </div>
+            < QuickView bannerStyle={bannerStyle} movie={movie} popup={clickPopup} popupStatut={popup} />
         </header>
     );
 };

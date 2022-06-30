@@ -20,7 +20,7 @@ const Nav = () => {
 
     
      const clickMenu = () => {
-         console.log(toggleMenu);
+        // console.log(toggleMenu);
         toggleMenu ? setToggleMenu (false) : setToggleMenu(true) ;
      }
 
