@@ -4,16 +4,22 @@ import requests from "./components/data/requests";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Row from "./components/Row";
+import Video from "./components/Video";
+import { BrowserRouter as Router  , Routes,Route, Navigate  } from 'react-router-dom';
 
 
 const App = () => {
   return (
     <div>
+     <Router>
+          <Nav />
+          <Banner />
 
- 
+          <Routes>
+               <Route exact path="/video/:id" element={Video} />
+          </Routes>
 
-      <Nav />
-      <Banner />
+         
 
       <Row
         title="Programmes originaux Netflix"
@@ -40,6 +46,10 @@ const App = () => {
       {/* video rapide */}
       {/* Footer */}
       <Footer />
+     </Router>
+
+
+      
     </div>
   );
 };

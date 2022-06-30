@@ -4,7 +4,8 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import HelpIcon from '@mui/icons-material/Help';
 import requests from './data/requests';
 import axios from 'axios';
-import QuickView from './QuickView'
+import QuickView from './QuickView';
+import { Link } from 'react-router-dom';
 
 
 const Banner = () => {
@@ -58,7 +59,9 @@ const Banner = () => {
                 <h1 className="banner__title"> { movie?.title || movie?.original_title || movie?.name } </h1>
                 <p className="banner__description"> {movie?.overview} </p>
                 <div className="banner__buttons">
-                    <button className="banner__button banner__button--play"> < PlayArrowIcon /> Lecture</button>
+                    <Link to={ `/video/${movie?.id}` }>
+                        <button className="banner__button banner__button--play"> < PlayArrowIcon /> Lecture</button>
+                    </Link>
                     <button className="banner__button" onClick={clickPopup}  > < HelpIcon />  Plus d'info</button>
                 </div>
             </div>
